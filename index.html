@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w2.org/1999/xhtml">
-<html lang="en">
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html lang="en">
     <head>
 	<meta name="generator" content="Hugo 0.123.1">
             <meta charset="utf-8" />
@@ -8,12 +8,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="4s3ti cv terminal format">
     <meta property="og:title" content="HPs Terminal Resume" />
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://terminalresume.github.io/" />
+    <meta property="og:url" content="http://localhost:1313/" />
     <link rel="sitemap" type="application/xml" title="Sitemap" href=""/>
-    <link rel="canonical" href="https://terminalresume.github.io/" />    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="canonical" href="http://localhost:1313/" />    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
     <link rel="manifest" href="./site.webmanifest">
@@ -55,6 +55,20 @@ jQuery(document).ready(function($) {
      
     function whois () {
         term.echo ("");
+         
+            term.echo ("[[b;grey;]Name:]\t\t\tHetav Pandya");
+            term.echo ("[[b;grey;]Profession:]\t\tSoftware Engineer");
+            term.echo ("[[b;grey;]Location:]\t\tVancouver, Canada");
+            
+                term.echo ("[[b;grey;]Email:]\t\t\tpandyahetav1@gmail.com");
+            
+            
+                term.echo ("[[b;grey;]Homepage:]\t\thttps:\/\/www.linkedin.com\/in\/hetav-pandya\/");
+            
+            
+                term.echo ("")
+                term.echo ("A fast learner, a curious mind, striving to be the hardest working lad in the room!\n")
+            
         
         term.echo ("");
       }
@@ -62,6 +76,12 @@ jQuery(document).ready(function($) {
     function social () {
         term.echo("");
         
+            
+                
+                    term.echo("github:" + "       https:\/\/github.com\/pandyah5");
+                
+                    term.echo("linkedin:" + "       https:\/\/www.linkedin.com\/in\/hetav-pandya\/");
+                
             
         
         term.echo("")
@@ -75,30 +95,320 @@ jQuery(document).ready(function($) {
     function work () {
         term.echo("");
         
+            
+                term.echo("[[b;green;]Software Engineer]");
+                term.echo("Arista Networks");
+                term.echo("Vancouver, Canada");
+                term.echo("Starting June 2024");
+                term.echo ("");
+                term.echo("Will join the Vancouver team this summer to work on the next generation of datacenter networking software!");
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;green;]Teaching Assistant at the Dept. of Mathematics]");
+                term.echo("The University of Toronto");
+                term.echo("Toronto, Canada");
+                term.echo("September 2023  - May 2024");
+                term.echo ("");
+                term.echo("Worked part-time alongside my fourth year to teach Linear Algebra, Fundamental Calculus and Differential Equations to Engineering students at the University of Toronto.");
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;green;]Software Engineer Intern]");
+                term.echo("Intel Corporation");
+                term.echo("Toronto, Canada");
+                term.echo("May 2022  - May 2023");
+                term.echo ("");
+                term.echo("I undertook multiple responsibilities within the Quartus Prime development, including the development of a netlist writer in C\u002b\u002b for upcoming releases. Additionally, I introduced an IP pin-mapping feature, cutting down the compilation time for customer designs by 15%. To enhance performance further, I utilized profiling tools like VTune and flamegraphs to meticulously optimize code and pinpoint bottlenecks. Collaborating closely with the router team, I facilitated the determination of formal verification requirements for our flagship Agilex FPGAs, ensuring comprehensive coverage of our top models.");
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;green;]Data Scientist Intern]");
+                term.echo("Bell Canada");
+                term.echo("Toronto, Canada");
+                term.echo("May 2021 - August 2021");
+                term.echo ("");
+                term.echo("I collaborated with stakeholders to identify performance bottlenecks and subsequently optimized MySQL data queries, achieving an average time reduction of 60%. Additionally, I spearheaded the creation of an automated production deep learning pipeline using Python and Kubeflow. This initiative aimed to swiftly detect potential flaws in new version releases, resulting in a remarkable reduction in detection time from three weeks to just 15 minutes.");
+                term.echo("-------------------- ");
+                term.echo("");
+            
+                term.echo("[[b;green;]Machine Learning Model Developer]");
+                term.echo("General Motors");
+                term.echo("Toronto, Canada");
+                term.echo("May 2021 - July 2021");
+                term.echo ("");
+                term.echo("I focused on streamlining our data workflow by automating the collection pipeline, which encompassed data pre-processing and image augmentation. Additionally, I successfully deployed a real-time custom object detection model that achieved a mean Average Precision of 0.7, contributing to our goal of enhancing our system\u0027s accuracy and efficiency.");
+                term.echo("-------------------- ");
+                term.echo("");
+            
+        
     }
 
     function education () {
         term.echo("");
+        
+            
+                term.echo("[[b;green;]University of Toronto]");
+                term.echo("September 2019 - May 2024");
+                
+                    term.echo("BASc, Computer Engineering with Artificial Intelligence Minor and Business certificate with CGPA of 3.97\/4, ranked second in UofT Engineering in 2019-20");
+                
+                term.echo("-------------------- ");
+                term.echo("");
+            
         
     }
 
     function skills () {
         term.echo(" ");
         
+            
+                var bar_length = Math.round( 100  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;green;]Mathematics:]\n" +
+                        bar_filled + bar_blank + 
+                         100  +"%");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 90  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;green;]Python:]\n" +
+                        bar_filled + bar_blank + 
+                         90  +"%");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 90  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;green;]C\u002b\u002b:]\n" +
+                        bar_filled + bar_blank + 
+                         90  +"%");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 90  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;green;]C:]\n" +
+                        bar_filled + bar_blank + 
+                         90  +"%");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 90  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;green;]MySQL:]\n" +
+                        bar_filled + bar_blank + 
+                         90  +"%");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 90  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;green;]Git:]\n" +
+                        bar_filled + bar_blank + 
+                         90  +"%");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 85  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;green;]Linux:]\n" +
+                        bar_filled + bar_blank + 
+                         85  +"%");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 80  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;green;]PyTorch:]\n" +
+                        bar_filled + bar_blank + 
+                         80  +"%");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 80  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;green;]TensorFlow:]\n" +
+                        bar_filled + bar_blank + 
+                         80  +"%");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 80  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;green;]Docker:]\n" +
+                        bar_filled + bar_blank + 
+                         80  +"%");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 70  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;green;]Go:]\n" +
+                        bar_filled + bar_blank + 
+                         70  +"%");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 70  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;green;]Kotlin:]\n" +
+                        bar_filled + bar_blank + 
+                         70  +"%");
+                
+                term.echo ("")
+            
+        
     }
     function softskills () {
         term.echo("");
+        
+            
+                var bar_length = Math.round( 100  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;green;]Mixing the best music tracks:]\n" +
+                       bar_filled + bar_blank +
+                        100  +"%");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 90  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;green;]Leadership:]\n" +
+                       bar_filled + bar_blank +
+                        90  +"%");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 90  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;green;]Problem-solving:]\n" +
+                       bar_filled + bar_blank +
+                        90  +"%");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 90  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;green;]Conflict management:]\n" +
+                       bar_filled + bar_blank +
+                        90  +"%");
+                
+                term.echo ("")
+            
+                var bar_length = Math.round( 90  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;green;]Communication:]\n" +
+                       bar_filled + bar_blank +
+                        90  +"%");
+                
+                term.echo ("")
+            
         
     }
       
     function languages () {
         term.echo("");
         
+            
+                var bar_length = Math.round( 100  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;green;]English:]\n" +
+                        "" + bar_filled + bar_blank + 
+                        " " +  100  +"%");
+                
+                term.echo("")
+            
+                var bar_length = Math.round( 100  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;green;]Hindi:]\n" +
+                        "" + bar_filled + bar_blank + 
+                        " " +  100  +"%");
+                
+                term.echo("")
+            
+                var bar_length = Math.round( 70  / 10);
+                var bar_filled = Array(bar_length + 1).join("&#9611;");
+                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                term.echo("[[b;green;]Gujarati:]\n" +
+                        "" + bar_filled + bar_blank + 
+                        " " +  70  +"%");
+                
+                term.echo("")
+            
+        
     }
 
     
     function projects () {
         term.echo("");
+        
+            
+                term.echo("[[b;green;]ML-and-RL-Algorithms-for-Adversarial-Agents-in-a-Collaborative-Net]");
+                term.echo("Sept 2023 - May 2024")
+                term.echo("https:\/\/github.com\/pandyah5\/ML-and-RL-Algorithms-for-Adversarial-Agents-in-a-Collaborative-Net")
+                
+                    term.echo("Our team worked with Prof. Lacra Pavel, to develop new Reinforcement Learning (RL) algorithms that seek convergence to a Nash Equilibrium in networks with partial information like those found in autonomous vehicle networks and smart power grids.");
+                
+                term.echo("-----------------------");
+                term.echo("");
+          
+                term.echo("[[b;green;]PEY Door]");
+                term.echo("March 2024")
+                term.echo("https:\/\/devpost.com\/software\/peydoor?ref_content=user-portfolio\u0026ref_feature=in_progress")
+                
+                    term.echo("Our portal aims to revolutionize the way 3rd-year students access invaluable insights from past PEY (Professional Experience Year) interns. No more sifting through unreliable, outdated anecdotes on platforms like Glassdoor or Reddit. With our platform, students can log in and gain access to summarized experiences directly from recent PEY interns.");
+                
+                term.echo("-----------------------");
+                term.echo("");
+          
+                term.echo("[[b;green;]UofT EventHub]");
+                term.echo("March 2024")
+                term.echo("https:\/\/github.com\/ECE444-2023Fall\/UofT-EventHub")
+                
+                    term.echo("The goal of the project is to create a user-centric event management platform that enhances the experience of students, faculty, and staff at the University of Toronto (UofT) by providing an accurate and user-friendly solution for discovering, managing, and participating in events and activities. Our platform aims to serve as a one stop solution which significantly reduces the time and effort required to stay informed and engaged for students, clubs, and faculty members at the University of Toronto.");
+                
+                term.echo("-----------------------");
+                term.echo("");
+          
+                term.echo("[[b;green;]Toronto Armour]");
+                term.echo("June 2023")
+                term.echo("https:\/\/github.com\/pandyah5\/TorontoArmour")
+                
+                    term.echo("An open-source android application that alerts the users when they enter neighbourhoods with high safety risks. The app uses Toronto Police Service\u0027s crime data to provide real-time safety information to the users.");
+                
+                term.echo("-----------------------");
+                term.echo("");
+          
+                term.echo("[[b;green;]E-Motion]");
+                term.echo("Feb 2021")
+                term.echo("https:\/\/devpost.com\/software\/e-motion-otbl2i")
+                
+                    term.echo("A computer vision suite that enables users to play games, read e-books and listen to music using hand gestures. It secured the second place at UofT Hacks VIII.");
+                
+                term.echo("-----------------------");
+                term.echo("");
+          
         
     }
 
@@ -225,8 +535,8 @@ jQuery(document).ready(function($) {
                           "please type 'help' for a list of available commands\n");
         }
     }, {
-        prompt: '[[;grey;]][[;grey;]:~$]' + " ",
-        greetings: "[[b;white;]]",
+        prompt: '[[;grey;]ask@hetavpandya-c][[;grey;]:~$]' + " ",
+        greetings: "[[b;white;]Welcome to HP\u0027s online resume\n\n\nType \u0027help\u0027 for a list of available commands\n]",
         keydown: function(e, term) {
             if (animation) {
                 if (e.which == 68 && e.ctrlKey) { 
